@@ -1,0 +1,202 @@
+/* ==========================================================================
+   PHILOPATEER WAHEED — RESPONSIVE MEDIA QUERIES
+   Breakpoints: 1920px | 1440px | 1024px | 768px | 480px | 375px
+   ========================================================================== */
+
+/* 1920px Ultra Large Displays */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1536px;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-visual-img {
+    max-width: 620px;
+  }
+}
+
+/* 1440px Desktop Baseline */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+/* 1024px Laptops and Tablets (Landscape) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-badge {
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .github-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .github-profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* 768px Tablets (Portrait) & Mobile Devices */
+@media (max-width: 768px) {
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-highlight {
+    font-size: 1.6rem;
+  }
+
+  /* Mobile Navigation Drawer */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .education-meta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* 480px Smart Phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-highlight {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .modal-content-body {
+    padding: 1.5rem;
+  }
+
+  .modal-project-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* 375px Ultra Compact Mobile Screens */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+}

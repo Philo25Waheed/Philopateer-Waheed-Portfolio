@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#fitGrad)"/>
+  <g transform="translate(40, 30)">
+    <rect width="720" height="390" rx="12" fill="#1c1917" stroke="#292524" stroke-width="2"/>
+    
+    <!-- Top Nav -->
+    <rect width="720" height="44" rx="12" fill="#292524"/>
+    <text x="30" y="27" fill="#10b981" font-family="sans-serif" font-size="16" font-weight="900" letter-spacing="1">FITZONE</text>
+    <rect x="520" y="10" width="80" height="24" rx="12" fill="#10b981"/>
+    <text x="560" y="26" fill="#0c0a09" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Workouts</text>
+    <rect x="610" y="10" width="90" height="24" rx="12" fill="#06b6d4"/>
+    <text x="655" y="26" fill="#0c0a09" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">My Progress</text>
+
+    <!-- Hero Card inside app -->
+    <g transform="translate(30, 65)">
+      <rect width="660" height="120" rx="12" fill="#292524" stroke="#10b981" stroke-width="1"/>
+      <text x="30" y="40" fill="#f5f5f4" font-family="sans-serif" font-size="20" font-weight="bold">Elevate Your Fitness Journey</text>
+      <text x="30" y="65" fill="#a8a29e" font-family="sans-serif" font-size="12">Track workouts, calorie goals, and personalized exercise regimes.</text>
+      <rect x="30" y="80" width="130" height="28" rx="6" fill="url(#neonGreen)"/>
+      <text x="95" y="98" fill="#0c0a09" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Start Workout</text>
+    </g>
+
+    <!-- 3 Workout Cards -->
+    <g transform="translate(30, 205)">
+      <!-- Card 1 -->
+      <rect width="200" height="155" rx="10" fill="#292524" stroke="#44403c"/>
+      <rect x="15" y="15" width="170" height="70" rx="6" fill="#1c1917"/>
+      <text x="100" y="55" fill="#10b981" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="bold">Cardio &amp; Endurance</text>
+      <text x="15" y="105" fill="#f5f5f4" font-family="sans-serif" font-size="12" font-weight="bold">HIIT Session</text>
+      <text x="15" y="125" fill="#a8a29e" font-family="sans-serif" font-size="10">45 Mins • 450 kcal</text>
+
+      <!-- Card 2 -->
+      <rect x="230" width="200" height="155" rx="10" fill="#292524" stroke="#44403c"/>
+      <rect x="245" y="15" width="170" height="70" rx="6" fill="#1c1917"/>
+      <text x="330" y="55" fill="#06b6d4" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="bold">Strength Training</text>
+      <text x="245" y="105" fill="#f5f5f4" font-family="sans-serif" font-size="12" font-weight="bold">Hypertrophy Split</text>
+      <text x="245" y="125" fill="#a8a29e" font-family="sans-serif" font-size="10">60 Mins • Upper Body</text>
+
+      <!-- Card 3 -->
+      <rect x="460" width="200" height="155" rx="10" fill="#292524" stroke="#44403c"/>
+      <rect x="475" y="15" width="170" height="70" rx="6" fill="#1c1917"/>
+      <text x="560" y="55" fill="#fbbf24" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="bold">Nutrition Plan</text>
+      <text x="475" y="105" fill="#f5f5f4" font-family="sans-serif" font-size="12" font-weight="bold">Macro Calculator</text>
+      <text x="475" y="125" fill="#a8a29e" font-family="sans-serif" font-size="10">Daily Target • 2,400 kcal</text>
+    </g>
+  </g>
+</svg>
