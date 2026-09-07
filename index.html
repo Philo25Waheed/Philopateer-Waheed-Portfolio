@@ -41,6 +41,16 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Theme Initialization (Prevents flash of wrong theme) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 
 <body>
@@ -73,9 +83,14 @@
         </ul>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 1rem;">
-        <a href="#contact" class="btn btn-primary btn-sm"
-          style="display: none; @media(min-width: 768px){display:inline-flex;}">Let's Talk</a>
+      <div class="nav-actions">
+        <!-- Theme Mode Toggle Button -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fas fa-moon theme-icon-dark" aria-hidden="true"></i>
+          <i class="fas fa-sun theme-icon-light" aria-hidden="true"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta-btn">Let's Talk</a>
         <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
@@ -220,7 +235,7 @@
     <!-- ==========================================================================
          TECHNICAL SKILLS SECTION
          ========================================================================== -->
-    <section id="skills" class="section" style="background: rgba(17, 24, 39, 0.2);">
+    <section id="skills" class="section section-alt">
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle">Technical Proficiency</span>
@@ -495,7 +510,7 @@
     <!-- ==========================================================================
          EDUCATION SECTION
          ========================================================================== -->
-    <section id="education" class="section" style="background: rgba(17, 24, 39, 0.2);">
+    <section id="education" class="section section-alt">
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle">Academic Background</span>
@@ -550,7 +565,7 @@
 
           <!-- NTI -->
           <div class="cert-card">
-            <img src="img/nti.png" alt="NTI Certification Preview" class="cert-img">
+            <img src="img/NTI.png" alt="NTI Certification Preview" class="cert-img">
             <div class="cert-body">
               <h3 class="cert-title">Full-Stack Web Development in PHP &amp; Laravel</h3>
               <div class="cert-org"><i class="fas fa-award"></i> National Telecommunication Institute (NTI) &bull; MCIT</div>
@@ -602,7 +617,7 @@
     <!-- ==========================================================================
          EXPERIENCE / ACTIVITIES SECTION
          ========================================================================== -->
-    <section id="experience" class="section" style="background: rgba(17, 24, 39, 0.2);">
+    <section id="experience" class="section section-alt">
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle">Trajectory</span>
@@ -804,7 +819,7 @@
     <!-- ==========================================================================
          CONTACT ME SECTION
          ========================================================================== -->
-    <section id="contact" class="section" style="background: rgba(17, 24, 39, 0.2);">
+    <section id="contact" class="section section-alt">
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle">Get In Touch</span>

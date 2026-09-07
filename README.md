@@ -9,13 +9,15 @@ A modern, high-performance, fully responsive **Frontend-Only Personal Portfolio 
 - **Developer Aesthetic**: Dark mode primary theme (`#0b0f17`), cyan & blue accent gradients (`#06b6d4` / `#3b82f6`), glassmorphism cards, and clean typography (`Outfit`, `Inter`, `Fira Code`).
 - **Interactive Code Visual**: Hero section featuring an interactive code window graphic representing core stack and engineering goals.
 - **Dynamic Project Modals**: "View Details" modals populating project features, tech tags, screenshots, and repository links without leaving the page.
-- **Categorized Technical Skills**: Programming languages, web development, backend technologies, databases, and developer tools organized into cards with technology badges (no fake percentage bars).
+- **Categorized Technical Skills**: Languages (C++, C#, PHP, Python, JS, SQL), Frameworks (ASP.NET Core, Laravel, EF Core, LINQ, Bootstrap), Databases & Tools (MySQL, Git, Vercel, RESTful APIs).
 - **Featured Projects**:
-  1. **Deacons School Management System** (PHP, MySQL, HTML, CSS, JS - Multi-role system)
-  2. **ERP System** ([GitHub Repo](https://github.com/Philo25Waheed/ERP_System))
-  3. **FitZone** ([GitHub Repo](https://github.com/Philo25Waheed/fitzone))
-  4. **E-Commerce Laravel Project** (Laravel, PHP, MySQL, CSS, JS)
-- **Education & Certifications**: Showcasing studies at Ahram Canadian University (Faculty of Computer Science and AI) and training certifications from ALX, Sprints.AI, and Black Horse.
+  1. **St. Timothy Bible School — Management & E-Learning Platform** ([GitHub Repo](https://github.com/Philo25Waheed/St-Timothy-Bible-School)) — Laravel, PHP, MySQL, JavaScript
+  2. **Enterprise Resource Planning (ERP) System** ([GitHub Repo](https://github.com/Philo25Waheed/ERP_System)) — PHP, Laravel, MySQL, Bootstrap
+  3. **FitZone — Fitness & Nutrition Platform** ([GitHub Repo](https://github.com/Philo25Waheed/fitzone)) — PHP, Laravel, MySQL, Bootstrap
+  4. **GB-Corp Race Game** ([GitHub Repo](https://github.com/Philo25Waheed/GB-Corp_Race_Game)) — JavaScript ES6+, HTML5, CSS3, 2D Game Physics
+  5. **PC-Builder Web Application** ([GitHub Repo](https://github.com/Philo25Waheed/pc-builder)) — NTI Capstone (Laravel, PHP, MySQL, Bootstrap)
+- **Education & Certifications**: Showcasing studies at Ahram Canadian University (3rd Year, GPA: 3.23 / 4.00) and training certifications from DEPI, NTI, ALX, Sprints.AI, and Black Horse.
+- **Experience & Internships**: Highlighting a 6-month Software Development Internship, DEPI (.NET), and NTI (PHP & Laravel) tracks.
 - **GitHub Showcase**: Dedicated section with profile overview and repository cards.
 - **Client-Side Contact Form**: Includes input validation and `mailto:` integration.
 - **Responsive & Accessible**: Optimized for screen widths from `1920px` down to `375px` with accessible navigation, focus states, and keyboard controls.

@@ -3,6 +3,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initNavbar();
   initCustomCursor();
   initScrollAnimations();
@@ -328,3 +329,52 @@ function initBackToTop() {
     });
   });
 }
+
+/* ==========================================================================
+   8. THEME TOGGLE (LIGHT & DARK MODE)
+   ========================================================================== */
+function initThemeToggle() {
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  if (!themeToggleBtn) return;
+
+  function getCurrentTheme() {
+    return document.documentElement.getAttribute('data-theme') || 'dark';
+  }
+
+  function applyTheme(theme, animate = false) {
+    if (animate) {
+      document.documentElement.classList.add('theme-transition');
+      setTimeout(() => {
+        document.documentElement.classList.remove('theme-transition');
+      }, 350);
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+
+    // Update accessibility attributes & tooltip
+    const isDark = theme === 'dark';
+    const label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+    themeToggleBtn.setAttribute('aria-label', label);
+    themeToggleBtn.setAttribute('title', label);
+  }
+
+  // Update initial ARIA label on load
+  const initialTheme = getCurrentTheme();
+  applyTheme(initialTheme, false);
+
+  // Toggle theme on button click
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = getCurrentTheme();
+    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme, true);
+  });
+
+  // Automatically respond to OS system theme changes if user hasn't explicitly set a preference
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  mediaQuery.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      applyTheme(e.matches ? 'dark' : 'light', true);
+    }
+  });
+}
+
