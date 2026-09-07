@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="raceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="neonTrack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="carGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="enemyCar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <linearGradient id="hudGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#raceBg)"/>
+
+  <g transform="translate(40, 25)">
+    <!-- Window Frame -->
+    <rect width="720" height="400" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    <rect width="720" height="42" rx="12" fill="#1e293b"/>
+    <rect y="30" width="720" height="12" fill="#1e293b"/>
+    
+    <!-- Window Controls -->
+    <circle cx="24" cy="21" r="5" fill="#ef4444"/>
+    <circle cx="40" cy="21" r="5" fill="#f59e0b"/>
+    <circle cx="56" cy="21" r="5" fill="#10b981"/>
+    
+    <text x="360" y="26" fill="#94a3b8" font-family="'Segoe UI', monospace, sans-serif" font-size="12" text-anchor="middle">GB-Corp Interactive 2D Racing Game — JavaScript Physics &amp; Collision Engine</text>
+
+    <!-- Game Viewport Area -->
+    <g transform="translate(20, 52)">
+      <!-- Road Canvas -->
+      <rect width="460" height="330" rx="8" fill="url(#neonTrack)" stroke="#334155"/>
+
+      <!-- Road Borders -->
+      <line x1="30" y1="0" x2="30" y2="330" stroke="#f59e0b" stroke-width="4" stroke-dasharray="14 10"/>
+      <line x1="430" y1="0" x2="430" y2="330" stroke="#f59e0b" stroke-width="4" stroke-dasharray="14 10"/>
+
+      <!-- Lane Divider 1 -->
+      <line x1="163" y1="0" x2="163" y2="330" stroke="#475569" stroke-width="3" stroke-dasharray="25 20"/>
+      <!-- Lane Divider 2 -->
+      <line x1="296" y1="0" x2="296" y2="330" stroke="#475569" stroke-width="3" stroke-dasharray="25 20"/>
+
+      <!-- Enemy Obstacle Car 1 -->
+      <g transform="translate(85, 45)">
+        <rect width="44" height="75" rx="8" fill="url(#enemyCar)" stroke="#fda4af" stroke-width="1.5"/>
+        <rect x="6" y="15" width="32" height="14" rx="3" fill="#1e293b"/>
+        <rect x="6" y="52" width="32" height="10" rx="2" fill="#1e293b"/>
+        <circle cx="10" cy="8" r="3" fill="#fef08a"/>
+        <circle cx="34" cy="8" r="3" fill="#fef08a"/>
+      </g>
+
+      <!-- Enemy Obstacle Car 2 -->
+      <g transform="translate(345, 120)">
+        <rect width="44" height="75" rx="8" fill="#eab308" stroke="#fef08a" stroke-width="1.5"/>
+        <rect x="6" y="15" width="32" height="14" rx="3" fill="#1e293b"/>
+        <rect x="6" y="52" width="32" height="10" rx="2" fill="#1e293b"/>
+        <circle cx="10" cy="8" r="3" fill="#ffffff"/>
+        <circle cx="34" cy="8" r="3" fill="#ffffff"/>
+      </g>
+
+      <!-- Player Car -->
+      <g transform="translate(210, 215)">
+        <rect width="48" height="82" rx="10" fill="url(#carGlow)" stroke="#67e8f9" stroke-width="2"/>
+        <rect x="7" y="16" width="34" height="16" rx="4" fill="#0f172a"/>
+        <rect x="7" y="56" width="34" height="12" rx="3" fill="#0f172a"/>
+        <circle cx="11" cy="7" r="4" fill="#38bdf8"/>
+        <circle cx="37" cy="7" r="4" fill="#38bdf8"/>
+        <line x1="24" y1="12" x2="24" y2="70" stroke="#a5f3fc" stroke-width="2"/>
+      </g>
+
+      <!-- In-Game HUD overlay -->
+      <rect x="15" y="12" width="130" height="34" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="#0284c7"/>
+      <text x="25" y="34" fill="#38bdf8" font-family="'Segoe UI', monospace" font-size="13" font-weight="bold">SCORE: 1,480</text>
+
+      <rect x="330" y="12" width="115" height="34" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="#10b981"/>
+      <text x="342" y="34" fill="#34d399" font-family="'Segoe UI', monospace" font-size="13" font-weight="bold">SPD: 124 KM/H</text>
+    </g>
+
+    <!-- Side Dashboard Panel -->
+    <g transform="translate(500, 52)">
+      <!-- Game Info Card -->
+      <rect width="200" height="95" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="16" y="25" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">GB-Corp Race Game</text>
+      <text x="16" y="44" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Architecture: Pure JavaScript</text>
+      <text x="16" y="62" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Rendering: Dynamic DOM / Canvas</text>
+      <text x="16" y="80" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="11">Controls: Responsive Arrows/Touch</text>
+
+      <!-- Mechanics telemetry -->
+      <rect y="110" width="200" height="120" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="16" y="132" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">Engine Features</text>
+      <circle cx="22" cy="152" r="3" fill="#10b981"/>
+      <text x="32" y="156" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">Bounding Box Collision</text>
+
+      <circle cx="22" cy="174" r="3" fill="#06b6d4"/>
+      <text x="32" y="178" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">Adaptive Difficulty Curve</text>
+
+      <circle cx="22" cy="196" r="3" fill="#f59e0b"/>
+      <text x="32" y="200" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">State Management Loop</text>
+
+      <circle cx="22" cy="218" r="3" fill="#a855f7"/>
+      <text x="32" y="222" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">Mobile Touch Optimization</text>
+
+      <!-- Tech Stack Badges -->
+      <g transform="translate(0, 245)">
+        <rect width="60" height="26" rx="6" fill="#f7df1e" opacity="0.15"/>
+        <text x="30" y="17" fill="#facc15" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">JS (ES6+)</text>
+
+        <rect x="68" width="62" height="26" rx="6" fill="#e34f26" opacity="0.15"/>
+        <text x="99" y="17" fill="#fb923c" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">HTML5</text>
+
+        <rect x="138" width="62" height="26" rx="6" fill="#1572b6" opacity="0.15"/>
+        <text x="169" y="17" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">CSS3</text>
+      </g>
+
+      <!-- Status Indicator -->
+      <g transform="translate(0, 285)">
+        <rect width="200" height="45" rx="8" fill="#0f172a" stroke="#059669"/>
+        <circle cx="20" cy="22" r="5" fill="#10b981"/>
+        <text x="34" y="20" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Game Engine Status</text>
+        <text x="34" y="34" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">60 FPS Smooth Loop</text>
+      </g>
+    </g>
+  </g>
+</svg>

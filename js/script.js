@@ -290,7 +290,7 @@ function initContactForm() {
 
     // Trigger mailto link for direct client send
     const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-    const mailtoUrl = `mailto:philo.waheed.dev@example.com?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
+    const mailtoUrl = `mailto:philowaheed25@gmail.com?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
 
     showStatus('Preparing your message... Opening your email client.', 'success');
     

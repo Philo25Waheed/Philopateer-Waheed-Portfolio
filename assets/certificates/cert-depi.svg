@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="depiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061a14"/>
+      <stop offset="100%" stop-color="#0a2e23"/>
+    </linearGradient>
+    <linearGradient id="depiAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="depiBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#depiGrad)" stroke="#047857" stroke-width="2"/>
+  <rect x="20" y="20" width="560" height="360" rx="12" fill="none" stroke="url(#depiAccent)" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.6"/>
+  
+  <g transform="translate(50, 50)">
+    <!-- Organization Badge -->
+    <rect width="90" height="44" rx="10" fill="url(#depiBadge)"/>
+    <text x="45" y="28" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" text-anchor="middle" letter-spacing="1.5">DEPI</text>
+    
+    <!-- Title & Subtitle -->
+    <text x="108" y="24" fill="#f8fafc" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold">Digital Egypt Pioneers Initiative</text>
+    <text x="108" y="44" fill="#6ee7b7" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Full-Stack .NET Development Specialization</text>
+    
+    <!-- Divider -->
+    <path d="M 0 85 L 500 85" stroke="#065f46" stroke-width="1"/>
+    
+    <!-- Body Content -->
+    <text x="250" y="130" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">Ministry of Communications and Information Technology (MCIT)</text>
+    <text x="250" y="170" fill="#34d399" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">Philopateer Waheed</text>
+    <text x="250" y="202" fill="#cbd5e1" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle">ASP.NET Core • Entity Framework Core • LINQ • Enterprise MVC Architectures</text>
+    <text x="250" y="224" fill="#64748b" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Role-Based Access Control • SQL Data Schemas • Admin Dashboards</text>
+
+    <!-- Verified Badge Footer -->
+    <rect x="180" y="250" width="140" height="28" rx="14" fill="#064e3b" stroke="#10b981"/>
+    <text x="250" y="268" fill="#a7f3d0" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Official Initiative Track</text>
+  </g>
+</svg>
