@@ -1,98 +1,65 @@
 # Philopateer Waheed — Personal Portfolio Website
 
-A bespoke, editorial, high-performance personal portfolio website for **Philopateer Waheed** (Software Engineer & Backend Specialist at Ahram Canadian University).
-
-Designed with an **"Architectural Systems & Editorial Dossier"** visual identity, **full bilingual support (English & Arabic with proper RTL layout mirroring)**, an interactive backend architecture blueprint, varied project showcase layouts, and high-performance frontend architecture.
+A modern, high-performance, fully responsive **Frontend-Only Personal Portfolio Website** for **Philopateer Waheed** (Software Engineer & Web Developer student at Ahram Canadian University).
 
 ---
 
-## 🌟 Key Features & Redesign Highlights
+## 🌟 Features & Highlights
 
-- **Visual Identity ("Architectural Systems & Editorial Dossier")**:
-  - Bespoke editorial masthead aesthetic with obsidian slate canvas (`#090b0e`), precision hairline borders, warm signal amber accents (`#f59e0b`), and technical metadata typography.
-  - Zero generic template patterns: no gradient blob backgrounds, no rounded dashboard cards, no centered "Hi I'm a Developer" clichés.
-  - Cohesive Dark & Light theme modes with automatic OS sync and `localStorage` persistence.
-- **Full Bilingual Support (English | العربية)**:
-  - Seamless in-memory language switching between **English (LTR)** and **Natural Arabic (RTL)** without reloading the page.
-  - Switches `lang="ar"` and `dir="rtl"` with comprehensive CSS Logical Properties (`margin-inline`, `padding-inline`, `inset-inline-start`, text alignments).
-  - Directional icons and arrows automatically mirror in RTL mode.
-  - High-quality Arabic typography powered by **IBM Plex Sans Arabic** paired with **Space Grotesk** and **Plus Jakarta Sans** for English.
-  - Persists language preference across browser reloads via `localStorage` and supports direct sharing via `?lang=en` or `?lang=ar`.
-  - Professional, natural Arabic translation preserving industry-standard technical terms (Laravel, PHP, C#, .NET, MySQL, REST API, GitHub).
-- **Interactive System Architecture Blueprint (Hero Section)**:
-  - An interactive architectural schema representing Philopateer's technical mental model:
-    1. Client & Presentation Tier (Modern Web UI, Responsive ES6+)
-    2. API & Gateway Middleware (RESTful Endpoints, Routing, RBAC, Validation)
-    3. Application Domain Business Logic (ASP.NET Core & Laravel MVC, EF Core, LINQ)
-    4. Relational Persistence Tier (MySQL Schemas, Relational Normalization, Indexing)
-- **Layered Technical Competencies Matrix**:
-  - Replaces generic skill pills with an architectural stack organized by systems layers:
-    - *Core Languages & Runtimes* (C#, PHP, C++, JavaScript ES6+, Python, SQL)
-    - *Frameworks & Backend Architecture* (ASP.NET Core, Laravel, EF Core, LINQ, RESTful APIs)
-    - *Databases & Persistence* (MySQL, Normalization, Relational Index Optimization)
-    - *Toolchain & Delivery* (Git, GitHub, Vercel, Composer, XAMPP, Google Apps Script)
-    - *Engineering Disciplines* (MVC, RBAC Security, Database Optimization, Agile)
-    - *Professional Capabilities* (Problem Solving, Critical Thinking, Continuous Growth)
-- **Varied Project Showcase**:
-  - **Hero Feature Showcase**: Full-width asymmetric breakdown for **St. Timothy Bible School — Management & E-Learning Platform**.
-  - **Split System Cards**: Alternating asymmetric layouts for **Enterprise Resource Planning (ERP) System** and **FitZone Platform**.
-  - **Compact Technical Ledger**: High-density engineering ledger for **PC-Builder (NTI Capstone)** and **GB-Corp Race Game (Custom 2D Physics)**.
-  - **Dynamic Bilingual Modal Dialog**: Interactive "System Details" modal rendering deep architectural insights, feature lists, and repository links in the active language.
-- **Accredited Education & Certifications**:
-  - **Ahram Canadian University (ACU)**: 3rd Year Software Engineering, Cumulative GPA: **3.23 / 4.00**.
-  - **Government & Industry Credentials**: DEPI (.NET Specialization • MCIT), NTI (PHP & Laravel Track • MCIT), ALX Africa, Black Horse Academy, and Sprints.AI.
-- **Professional Contact & Transmission**:
-  - Direct connection cards for Email, GitHub, LinkedIn, and WhatsApp.
-  - Production transmission form with client-side regex validation, accessible labels, loading states, and full EmailJS integration.
+- **Developer Aesthetic**: Dark mode primary theme (`#0b0f17`), cyan & blue accent gradients (`#06b6d4` / `#3b82f6`), glassmorphism cards, and clean typography (`Outfit`, `Inter`, `Fira Code`).
+- **Interactive Code Visual**: Hero section featuring an interactive code window graphic representing core stack and engineering goals.
+- **Dynamic Project Modals**: "View Details" modals populating project features, tech tags, screenshots, and repository links without leaving the page.
+- **Categorized Technical Skills**: Programming languages, web development, backend technologies, databases, and developer tools organized into cards with technology badges (no fake percentage bars).
+- **Featured Projects**:
+  1. **Deacons School Management System** (PHP, MySQL, HTML, CSS, JS - Multi-role system)
+  2. **ERP System** ([GitHub Repo](https://github.com/Philo25Waheed/ERP_System))
+  3. **FitZone** ([GitHub Repo](https://github.com/Philo25Waheed/fitzone))
+  4. **E-Commerce Laravel Project** (Laravel, PHP, MySQL, CSS, JS)
+- **Education & Certifications**: Showcasing studies at Ahram Canadian University (Faculty of Computer Science and AI) and training certifications from ALX, Sprints.AI, and Black Horse.
+- **GitHub Showcase**: Dedicated section with profile overview and repository cards.
+- **Client-Side Contact Form**: Includes input validation and `mailto:` integration.
+- **Responsive & Accessible**: Optimized for screen widths from `1920px` down to `375px` with accessible navigation, focus states, and keyboard controls.
 
 ---
 
-## 📁 Project Architecture
+## 📁 File Structure
 
 ```
 portfolio/
-├── index.html                  # Semantic, accessible HTML5 document with bilingual data-i18n attributes
+├── index.html                  # Main semantic HTML5 document
 ├── css/
-│   ├── style.css               # Architectural Systems design system, tokens, typography, RTL rules
-│   └── responsive.css          # Responsive breakpoints (1440px, 1024px, 768px, 480px, 375px)
+│   ├── style.css               # Core design system, variables, dark theme & modals
+│   └── responsive.css          # Responsive breakpoints (1920px - 375px)
 ├── js/
-│   ├── translations.js         # Comprehensive English and natural Arabic translation dictionary
-│   ├── projects-data.js        # Bilingual projects data store for showcase cards and modals
-│   └── script.js               # Core interactivity: language switcher, RTL engine, theme, modals, contact form
+│   ├── script.js               # Interactive script (Nav, Cursor, Modals, Form)
+│   └── projects-data.js        # Project data store for interactive details modal
 ├── assets/
-│   ├── images/                 # Project graphics and SVG visuals
-│   ├── certificates/           # Accreditation badge previews
+│   ├── images/                 # Project previews & hero visual SVG assets
+│   ├── certificates/           # Training badge preview SVGs
 │   └── resume/
 │       └── Philopateer-Waheed-CV.pdf  # Curriculum Vitae document
 ├── favicon/
-│   └── favicon.svg             # Minimalist terminal SVG favicon
-├── img/                        # Project preview screenshots & certification badges
+│   └── favicon.svg             # Favicon graphic
 └── README.md                   # Project documentation
 ```
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 How to View Locally
 
-This portfolio is **100% Client-Side** with zero server dependencies or build steps required.
+Since this project is **100% Frontend-Only**, no backend installation, database configuration, or server runner (like Node, PHP, or XAMPP) is strictly required!
 
-### Method 1: Direct File
-Double-click `index.html` or open it directly in modern browsers (Chrome, Edge, Firefox, Safari).
+### Option 1: Direct File Open
+Simply double-click `index.html` or open it directly in any modern browser (Chrome, Edge, Firefox, Safari).
 
-### Method 2: Local HTTP Server
-Using VS Code Live Server extension or running:
-```bash
-# Python
-python -m http.server 8000
-
-# Node.js npx
-npx serve .
-```
-Then visit `http://localhost:8000` (or `http://localhost:8000/?lang=ar` for Arabic).
+### Option 2: Live Server Extension
+If using VS Code:
+1. Install the **Live Server** extension.
+2. Right-click `index.html` and select **Open with Live Server**.
 
 ---
 
-## 📄 Credits & Copyright
+## 📄 License & Credits
 
-Designed & Engineered for **Philopateer Waheed**  
+Designed & Built for **Philopateer Waheed**  
 © 2026 Philopateer Waheed. All rights reserved.
